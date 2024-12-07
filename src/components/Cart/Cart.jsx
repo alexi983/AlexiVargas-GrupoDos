@@ -40,17 +40,17 @@ const Cart = () => {
                                         <p>${item.price.toFixed(2)} x {item.quantity}</p>
                                         <div className="flex items-center mt-2">
                                             <button
-                                                onClick={() => handleDecrement(item)} // Decrementar
+                                                onClick={() => handleDecrement(item)} 
                                                 className="bg-gray-300 text-black px-2 py-1 rounded hover:bg-gray-400"
-                                                disabled={item.quantity <= 1} // Deshabilitar si la cantidad es 1
+                                                disabled={item.quantity <= 1} 
                                             >
                                                 -
                                             </button>
                                             <span className="mx-2">{item.quantity}</span>
                                             <button
-                                                onClick={() => handleIncrement(item)} // Incrementar
+                                                onClick={() => handleIncrement(item)} 
                                                 className="bg-gray-300 text-black px-2 py-1 rounded hover:bg-gray-400"
-                                                disabled={item.quantity >= item.stock} // Deshabilitar si alcanza el stock máximo
+                                                disabled={item.quantity >= item.stock} 
                                             >
                                                 +
                                             </button>
