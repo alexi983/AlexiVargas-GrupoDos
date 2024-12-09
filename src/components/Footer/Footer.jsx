@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function FooterComponent() {
     return (
         <div className="flex flex-col min-h-screen">
@@ -7,8 +9,8 @@ export default function FooterComponent() {
                 <div className="container mx-auto flex flex-col items-center justify-center text-center">
                     <p className="text-[#ffffff] mb-4">Venta Celulares</p>
                     <div className="mb-4">
-                        <a href="/about" className="text-[#ffffff] hover:text-[#cccccc] mx-2" aria-label="Acerca de nuestra empresa">Acerca de</a>
-                        <a href="/contact" className="text-[#ffffff] hover:text-[#cccccc] mx-2" aria-label="Ir a la página de contacto">Contacto</a>
+                        <Link to="/about" className="text-[#ffffff] hover:text-[#cccccc] mx-2" aria-label="Acerca de nuestra empresa">Acerca de</Link>
+                        <Link to="/contact" className="text-[#ffffff] hover:text-[#cccccc] mx-2" aria-label="Ir a la página de contacto">Contacto</Link>
                     </div>
                     <div className="flex space-x-4 mb-4">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#ffffff] hover:text-[#cccccc]" aria-label="Síguenos en Facebook">Facebook</a>
@@ -20,5 +22,6 @@ export default function FooterComponent() {
         </div>
     );
 }
+
 
 
